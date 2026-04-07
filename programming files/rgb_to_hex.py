@@ -1,4 +1,4 @@
-def rgb_to_hex(r, g, b):
+def rgb_to_hex(r, g, b): # Micah Allen (github username is "solsticewings")
     r = max(0, min(255, r))
     g = max(0, min(255, g))
     b = max(0, min(255, b))
