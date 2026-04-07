@@ -1,3 +1,4 @@
+#returns the sum of even numbers in a fibonacci sequence
 a, b = 0, 1
 sum_even = 0
 while b < 4000000:
