@@ -1,23 +1,27 @@
-#include <iostream>
+public class sum_even_fibonacci {
+    public static void main(String[] args) {
 
+    // Define the first two numbres in the fibonacci sequence
+    int a = 0, b = 1;
+    int sumEven = 0;
 
-// Bugs introduced - Micah Allen
-
-int main()
-{
-    int a = 1, b = 0; // sets a to 0, and b to 1
-    int sum_even = 0; // sets sum_even to 0
+    // Keep summing until the sum is 4,000,000 or higher
     while (b < 4000000) {
-        if (b % 2 == 1) { // checks if b is even
-            sum_even += b; // if b is even, adds b to sum_even
-        }
-        int temp = b; // sets temp equal b
-        b = a + b; // sets b equal to a plus b
-        a = temp; // sets a equal to temp
-    }
-    cout << sum_even << endl; // couts what sum_even currently is
+// 
+      // If the current fib is even, add it to the sum
+      if (b % 2 == 0) {
+        sumEven += b;
+      }
 
-    return 0;
+      // Update the values of a and b
+      int temp = b;
+      b = a + b;
+      a = temp;
+    }
+
+    // Print out the sum
+    System.out.println(sumEven);
+  }
 }
 
 // answer should be 4613732
