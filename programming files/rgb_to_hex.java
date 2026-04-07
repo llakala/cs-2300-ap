@@ -7,6 +7,7 @@ public class rgb_to_hex {
         System.out.println("RGB color (" + r + ", " + g + ", " + b + ") = " + hexColor);
     }
 
+    // Converts the RGB expression of a color to the hexadecimal expression of the same color
     public static String rgbToHex(int r, int g, int b) {
         r = Math.min(255, Math.max(0, r));
         g = Math.min(255, Math.max(0, g));
