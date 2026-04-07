@@ -2,6 +2,9 @@
 #include <sstream>
 #include <iomanip>
 
+//@parameters: int red, int green, int blue
+//@returns:string of a hex color
+//Turns given red, green, and blue values into a hex code for that color
 std::string rgb_to_hex(int r, int g, int b)
 {
     r = std::max(0, std::min(255, r));
