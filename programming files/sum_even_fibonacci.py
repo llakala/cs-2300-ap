@@ -1,10 +1,10 @@
 #returns the sum of even numbers in a fibonacci sequence
 a, b = 0, 1
 sum_even = 0
-if b < 4000000:
+while b < 4000000:
     if b % 2 == 0:
-        sum_even = a + b
-    a, b = b, a
+        sum_even += b
+    a, b = b, b + a
 
 print(sum_even)
 
